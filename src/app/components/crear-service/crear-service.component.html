@@ -1,0 +1,29 @@
+<div class="form-group">
+    <label >Grúa de camión</label>
+    <select class="form-control" [(ngModel)]="truckCrane">
+      <option>true</option>
+      <option>false</option>
+    </select>
+</div>
+<div class="form-group">
+    <label >Grúa de moto</label>
+    <select class="form-control" [(ngModel)]="motorCycleCrane">
+        <option>true</option>
+        <option>false</option>
+      </select>
+</div>
+<div class="form-group">
+    <label >Coche Taller</label>
+    <select class="form-control" [(ngModel)]="workshopCar">
+        <option>true</option>
+        <option>false</option>
+      </select>
+</div>
+<div class="form-group">
+    <label >Moto Para Taller</label>
+    <select class="form-control" [(ngModel)]="motorcicleWorkshop">
+        <option>true</option>
+        <option>false</option>
+      </select>
+</div>
+<button type="submit" (click)="crearService()" class="btn btn-primary">Submit</button>

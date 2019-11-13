@@ -1,0 +1,13 @@
+<div class="container">
+    <div *ngFor="let service of services; index as i" class="card" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">Servicio</h5>
+            <p class="card-text">Grua de Camion: {{service.truckCrane}}</p>
+            <p class="card-text">Grua de Moto: {{service.motorCycleCrane}}</p>
+            <p class="card-text">Taller Carro: {{service.workshopCar}}</p>
+            <p class="card-text">Taller Moto: {{service.motorcicleWorkshop}}</p>
+            <button (click)="eliminarService(i)" class="btn btn-danger">Eliminar</button>
+        </div>
+     </div>
+</div>
+<a routerLink="./create"><button class="btn btn-success">Crear Servicio</button></a>

@@ -1,0 +1,21 @@
+<div class="form-group">
+    <label for="exampleInputEmail1">Placa</label>
+    <input [(ngModel)]="placa" type="text" class="form-control"  placeholder="Digite la placa">
+</div>
+<div class="form-group">
+    <label for="exampleInputEmail1">Transitlog</label>
+    <input  [(ngModel)]="transitlog" type="text" class="form-control" placeholder="Digite el transitlog">
+</div>
+<div class="form-group">
+    <label for="exampleInputEmail1">Color</label>
+    <input [(ngModel)]="color" type="text" class="form-control" placeholder="Digite el color">
+</div>
+<div class="form-group">
+    <label for="exampleInputEmail1">Dueño</label>
+    <input [(ngModel)]="owner" type="text" class="form-control" placeholder="Digite el id del dueño">
+</div>
+<div class="form-group">
+    <label for="exampleInputEmail1">Servicio</label>
+    <input [(ngModel)]="service" type="text" class="form-control"  placeholder="Digite el id del servicio">
+</div>
+<button type="submit" (click)="crearVehicle()" class="btn btn-primary">Submit</button>

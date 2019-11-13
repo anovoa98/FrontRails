@@ -1,0 +1,13 @@
+<div class="container">
+    <div *ngFor="let owner of owners; index as i" class="card" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">{{owner.name}}</h5>
+            <h6 class="card-subtitle mb-2 text-muted">{{owner.identification}}</h6>
+            <p class="card-text">telefono: {{owner.phoneNumber}} </p>
+            <p class="card-text">direccion: {{owner.residenceAddress}}</p>
+            <p class="card-text">email: {{owner.email}} </p>
+            <button (click)="eliminarOwner(i)" class="btn btn-danger">eliminar</button>
+        </div>
+     </div>
+</div>
+<a routerLink="./create"><button class="btn btn-success">Crear Propietario</button></a>

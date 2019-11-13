@@ -1,0 +1,21 @@
+<div class="form-group">
+    <label for="exampleInputEmail1">Nombre</label>
+    <input [(ngModel)]="name" type="text" class="form-control"  placeholder="Digite su nombre">
+</div>
+<div class="form-group">
+    <label for="exampleInputEmail1">Identificación</label>
+    <input  [(ngModel)]="identification" type="text" class="form-control" placeholder="Digite su numero de identificacion">
+</div>
+<div class="form-group">
+    <label for="exampleInputEmail1">Numero de telefono</label>
+    <input [(ngModel)]="phoneNumber" type="text" class="form-control" placeholder="Digite su numero de telefono">
+</div>
+<div class="form-group">
+    <label for="exampleInputEmail1">Direccion</label>
+    <input [(ngModel)]="residenceAddress" type="text" class="form-control" placeholder="Digite su direccion">
+</div>
+<div class="form-group">
+    <label for="exampleInputEmail1">Email</label>
+    <input [(ngModel)]="email" type="text" class="form-control"  placeholder="Digite su  email">
+</div>
+<button type="submit" (click)="crearOwner()" class="btn btn-primary">Submit</button>

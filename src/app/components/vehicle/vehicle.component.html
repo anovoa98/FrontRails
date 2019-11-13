@@ -1,0 +1,11 @@
+<div class="container">
+    <div *ngFor="let vehicle of vehicles; index as i" class="card" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">{{vehicle.placa}}</h5>
+            <h6 class="card-subtitle mb-2 text-muted"> Transitlog:  {{vehicle.transitlog}}</h6>
+            <p class="card-text">Color: {{vehicle.color}}</p>
+            <button (click)="eliminarVehicle(i)" class="btn btn-danger">Eliminar</button>
+        </div>
+     </div>
+</div>
+<a routerLink="./create"><button class="btn btn-success">Crear Vehiculo</button></a>
